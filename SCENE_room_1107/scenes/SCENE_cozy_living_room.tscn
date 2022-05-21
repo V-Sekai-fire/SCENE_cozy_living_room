@@ -18,14 +18,16 @@ vskeditor_preview_camera_path = NodePath("Camera3D")
 vskeditor_pipeline_paths = [NodePath("UroPipeline")]
 
 [node name="20211107_skybox" parent="." instance=ExtResource( "1_kdl6j" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.39527, -1.14622, 0.720367)
 
 [node name="RigidDynamicBody3D" type="RigidDynamicBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.39527, -1.14622, 0.720367)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidDynamicBody3D"]
 shape = SubResource( "BoxShape3D_c2n58" )
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.879666, -0.0858362, 0.467782, 0, 0.983578, 0.180483, -0.475592, -0.158765, 0.86522, 0.777928, 1.54094, -0.304049)
+transform = Transform3D(0.879666, -0.0858364, 0.467782, 0, 0.983578, 0.180483, -0.475592, -0.158765, 0.86522, -1.61734, 0.394718, 0.416318)
 
 [node name="UroPipeline" type="Node" parent="."]
 script = ExtResource( "3_jebm6" )
