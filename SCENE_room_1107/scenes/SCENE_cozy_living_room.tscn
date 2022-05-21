@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://pccle6g8vl5a"]
+[gd_scene load_steps=5 format=3 uid="uid://pccle6g8vl5a"]
 
 [ext_resource type="Script" path="res://addons/vsk_map/vsk_map_definition.gd" id="1_a34m0"]
 [ext_resource type="PackedScene" uid="uid://h5hslla6gxer" path="res://SCENE_room_1107/art/20211107_skybox.gltf" id="1_kdl6j"]
+[ext_resource type="Script" path="res://addons/vsk_importer_exporter/vsk_uro_pipeline.gd" id="3_jebm6"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_c2n58"]
 size = Vector3(13.0583, 1, 10.2238)
@@ -14,7 +15,7 @@ entity_instance_properties_list = []
 database_id = ""
 vskeditor_preview_type = 0
 vskeditor_preview_camera_path = NodePath("Camera3D")
-vskeditor_pipeline_paths = []
+vskeditor_pipeline_paths = [NodePath("UroPipeline")]
 
 [node name="20211107_skybox" parent="." instance=ExtResource( "1_kdl6j" )]
 
@@ -25,5 +26,9 @@ shape = SubResource( "BoxShape3D_c2n58" )
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.879666, -0.0858362, 0.467782, 0, 0.983578, 0.180483, -0.475592, -0.158765, 0.86522, 0.777928, 1.54094, -0.304049)
+
+[node name="UroPipeline" type="Node" parent="."]
+script = ExtResource( "3_jebm6" )
+database_id = "3e7101e3-d367-4d22-b0bd-593f28ea3378"
 
 [editable path="20211107_skybox"]
