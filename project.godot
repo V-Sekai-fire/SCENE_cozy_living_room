@@ -194,7 +194,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="VSK_map_template"
+config/name="SCENE_cozy_living_room"
 config/features=PackedStringArray("4.0")
 
 [assets]
