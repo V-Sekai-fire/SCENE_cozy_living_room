@@ -194,7 +194,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="SCENE_cozy_living_room"
+config/name="SCENE_room_1107"
 config/features=PackedStringArray("4.0")
 
 [assets]

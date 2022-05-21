@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://addons/vsk_map/vsk_map_definition.gd" id="1_a34m0"]
+[ext_resource type="Texture2D" path="res://SCENE_oom_1107/art/Image0001.png" id="2_uepra"]
+[ext_resource type="Script" path="res://addons/vsk_importer_exporter/vsk_uro_pipeline.gd" id="3_jebm6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fvb0m"]
+resource_name = "Material.001"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource( "2_uepra" )
+roughness = 0.5
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mu2na"]
+size = Vector3(10.111, 1, 11.0862)
+
+[node name="20211107_skybox"]
+script = ExtResource( "1_a34m0" )
+map_resources = []
+entity_instance_list = []
+entity_instance_properties_list = []
+database_id = ""
+vskeditor_preview_type = 0
+vskeditor_preview_camera_path = NodePath("Camera3D")
+vskeditor_pipeline_paths = [NodePath("UroPipeline")]
+
+[node name="Room001" parent="." index="0"]
+surface_material_override/0 = SubResource( "StandardMaterial3D_fvb0m" )
+
+[node name="Camera3D" type="Camera3D" parent="." index="2"]
+transform = Transform3D(0.720578, -0.154771, 0.675879, 0, 0.974769, 0.223214, -0.693374, -0.160843, 0.702398, 1.97635, 1.46929, -0.300873)
+fov = 60.0
+
+[node name="UroPipeline" type="Node" parent="." index="3"]
+script = ExtResource( "3_jebm6" )
+database_id = "6aeb2e64-1b93-4bad-aed8-3b3f5561a39b"
+
+[node name="RigidDynamicBody3D" type="RigidDynamicBody3D" parent="." index="4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidDynamicBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.03623)
+shape = SubResource( "BoxShape3D_mu2na" )
