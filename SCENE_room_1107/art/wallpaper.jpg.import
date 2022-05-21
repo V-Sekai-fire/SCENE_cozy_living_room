@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8wnbpa4bu6d2"
-path.s3tc="res://.godot/imported/wallpaper.jpg-c67b3c86556d2144b31697ceeb1f252e.s3tc.ctex"
-path.etc2="res://.godot/imported/wallpaper.jpg-c67b3c86556d2144b31697ceeb1f252e.etc2.ctex"
+path.s3tc="res://.godot/imported/wallpaper.jpg-cc7b03c81a14ceabd94c5d660a4c124c.s3tc.ctex"
+path.etc2="res://.godot/imported/wallpaper.jpg-cc7b03c81a14ceabd94c5d660a4c124c.etc2.ctex"
 metadata={
 "imported_formats": ["bptc", "s3tc", "etc2"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://SCENE_oom_1107/art/wallpaper.jpg"
-dest_files=["res://.godot/imported/wallpaper.jpg-c67b3c86556d2144b31697ceeb1f252e.s3tc.ctex", "res://.godot/imported/wallpaper.jpg-c67b3c86556d2144b31697ceeb1f252e.etc2.ctex"]
+source_file="res://SCENE_room_1107/art/wallpaper.jpg"
+dest_files=["res://.godot/imported/wallpaper.jpg-cc7b03c81a14ceabd94c5d660a4c124c.s3tc.ctex", "res://.godot/imported/wallpaper.jpg-cc7b03c81a14ceabd94c5d660a4c124c.etc2.ctex"]
 
 [params]
 
