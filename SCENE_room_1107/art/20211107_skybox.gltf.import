@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://h5hslla6gxer"
+uid="uid://qhm382vwd6jx"
 path="res://.godot/imported/20211107_skybox.gltf-45b74b2b3cb25ec3ab982a60e8b261c0.scn"
 
 [deps]
@@ -16,10 +16,10 @@ dest_files=["res://.godot/imported/20211107_skybox.gltf-45b74b2b3cb25ec3ab982a60
 nodes/root_type="Node3D"
 nodes/root_name="Scene Root"
 nodes/root_scale=1.0
-nodes/generate_physics=false
+nodes/generate_physics=true
 nodes/generate_navmesh=0
 physics/body_type=0
-physics/shape_type=0
+physics/shape_type=2
 decomposition/advanced=false
 decomposition/precision=5
 decomposition/max_concavity=1.0

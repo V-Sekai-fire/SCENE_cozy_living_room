@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://pccle6g8vl5a"]
 
 [ext_resource type="Script" path="res://addons/vsk_map/vsk_map_definition.gd" id="1_a34m0"]
-[ext_resource type="PackedScene" uid="uid://h5hslla6gxer" path="res://SCENE_room_1107/art/20211107_skybox.gltf" id="1_kdl6j"]
+[ext_resource type="PackedScene" uid="uid://qhm382vwd6jx" path="res://SCENE_room_1107/art/20211107_skybox.gltf" id="1_kdl6j"]
 [ext_resource type="Script" path="res://addons/vsk_importer_exporter/vsk_uro_pipeline.gd" id="3_jebm6"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_c2n58"]
@@ -19,6 +19,12 @@ vskeditor_pipeline_paths = [NodePath("UroPipeline")]
 
 [node name="20211107_skybox" parent="." instance=ExtResource( "1_kdl6j" )]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.39527, -1.14622, 0.720367)
+
+[node name="Room001" parent="20211107_skybox" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.862981, 0, -374.671)
+
+[node name="Wallpaper" parent="20211107_skybox" index="1"]
+transform = Transform3D(1000, 0, 0, 0, 1000, 0, 0, 0, 1000, 0, 0, 0)
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.879666, -0.0858364, 0.467782, 0, 0.983578, 0.180483, -0.475592, -0.158765, 0.86522, -1.61734, 0.394718, 0.416318)
