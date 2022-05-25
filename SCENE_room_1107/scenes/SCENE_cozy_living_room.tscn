@@ -27,7 +27,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.862981, 0, -374.671)
 transform = Transform3D(1000, 0, 0, 0, 1000, 0, 0, 0, 1000, 0, 0, 0)
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.879666, -0.0858364, 0.467782, 0, 0.983578, 0.180483, -0.475592, -0.158765, 0.86522, -1.61734, 0.394718, 0.416318)
+transform = Transform3D(0.864735, -0.0997363, 0.492226, 0, 0.980083, 0.198588, -0.502228, -0.171726, 0.847512, -0.339455, 0.451023, -372.947)
 
 [node name="UroPipeline" type="Node" parent="."]
 script = ExtResource( "3_jebm6" )
